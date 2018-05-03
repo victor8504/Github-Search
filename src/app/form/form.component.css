@@ -1,0 +1,26 @@
+.jumbotron {
+  background-color: #2471A3;
+  color: white;
+  font-size: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+input {
+  border-radius: 5px;
+  width: auto;
+  border: 0;
+  height: 30px;
+}
+
+button{
+  border-radius: 20px;
+}
+
+button:hover{
+  background-color: #17618E;
+}
+
+.results {
+  background-color: lightgrey;
+}

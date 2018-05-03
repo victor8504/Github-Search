@@ -1,0 +1,46 @@
+<div class="jumbotron">
+
+  <img class="mb15" src="assets/Images/github.png" alt="github logo">
+
+</div>
+
+<div class="container">
+
+  <form novalidate (ngSubmit)="submitTheUsername()" #userForm="ngForm">
+
+    <div class="form-group">
+
+      <div class="row">
+
+        <div class="col-md-3"> </div>
+
+        <div class="col-md-6">
+
+          <input type="text" name="username" required [(ngModel)]="userName" required class="form-control" #username="ngModel" placeholder="Enter your Username here">
+
+          <div class="alert alert-danger" *ngIf="username.errors?.required && username.touched"> Please enter your Username</div>
+          <br>
+          <button type="submit" name="submit" value="submit" class="btn btn-info">SEARCH</button>
+
+        </div>
+
+        <div class="col-md-3"></div>
+
+
+      </div>
+
+    </div>
+
+  </form>
+
+</div>
+<div class="results">
+  <!-- <div class="row"> -->
+    <!-- <div class="col-md-6"></div> -->
+    <!-- <div class="col-md-6"> -->
+      <app-results *ngIf="showData" (toggleBack)="showUserInput($event)"></app-results>
+
+    </div>
+
+  <!-- </div>
+</div> -->
